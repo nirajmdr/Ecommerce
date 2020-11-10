@@ -39,5 +39,5 @@
         </tbody>
     </table>
     <h2>Total Price: Rs. {{ Cart::session(auth()->id())->getTotal()}}</h2>
-    <a href="" class="btn btn-primary">Proceed to Checkout</a>
+    <a href="{{ route('cart.checkout') }}" class="btn btn-primary">Proceed to Checkout</a>
 @endsection
